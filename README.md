@@ -1,4 +1,4 @@
-# pwa
+# pwa-github
 
 ## Project setup
 ```
