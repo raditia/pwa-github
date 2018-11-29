@@ -1,7 +1,7 @@
-const API_BASE_PATH = 'https://api.github.com/'
+import axios from 'axios'
 
-export default {
-  api: {
-    users: API_BASE_PATH + 'users/'
-  }
+export default() => {
+  return axios.create({
+    baseURL: 'https://api.github.com/'
+  })
 }
