@@ -1,5 +1,5 @@
 # pwa-github
-
+Progressive Web Apps (PWA) for searching Github user using VueJS and Vuex. Deployed to Google Cloud Platform
 ## Project setup
 ```
 npm install
