@@ -4,7 +4,7 @@
     <input type="text" name="username" v-model="username" @keyup.enter="getUser">
     <button @click="getUser">Search</button>
 
-    <div v-if="userData !== null" class="profile">
+    <div v-if="showData === true" class="profile">
       <img v-bind:src="userData.avatar_url" width="200" height="200"> <br>
       <label>Username : {{ userData.login }}</label> <br>
       <label>Profile name : {{ userData.name }}</label> <br>
@@ -23,7 +23,8 @@ export default {
   },
   data () {
     return {
-      username: ''
+      username: '',
+      showData: false
     }
   },
   computed: {
@@ -42,6 +43,8 @@ export default {
           console.log('TIDAKK')
         }
       })
+      this.showData = true
+      this.username = ''
     }
   }
 }
